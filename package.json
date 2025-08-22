@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "generate-branch-report": "zx generate-branch-report.mjs"
+    "generate-branch-report": "node generate-branch-report.mjs"
   },
   "keywords": [],
   "author": "",
@@ -16,9 +16,11 @@
   },
   "dependencies": {
     "@octokit/rest": "20.1.0",
-    "csv-stringify": "6.4.6"
+    "csv-stringify": "6.4.6",
+    "yargs": "17.7.2"
   },
   "devDependencies": {
+    "@types/yargs": "17.0.32",
     "zx": "8.0.2"
   }
 }
